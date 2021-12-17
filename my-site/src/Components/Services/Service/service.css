@@ -1,0 +1,96 @@
+.cardd {
+  border: solid #d6d1d1 1px;
+
+  padding: 0.5rem;
+  margin: 1rem;
+  width: 45rem;
+  height: 10rem;
+  font-size: 16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.cardd:hover {
+  box-shadow: -4px 6px 12px -4px rgb(185, 180, 180);
+}
+
+.contenu {
+  display: flex;
+  flex-direction: row;
+}
+.leftside {
+  /* border: solid grey 1px; */
+  display: flex !important;
+  flex-direction: column;
+  padding: 0.2rem;
+  margin-top: 0.3rem;
+  align-content: center !important;
+  align-items: center !important;
+  height: fit-content;
+  font-size: 15px;
+}
+
+.rightside {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  height: 6rem;
+  width: 45rem;
+}
+
+.desc {
+  overflow: hidden;
+  position: relative;
+  height: 5rem;
+}
+.Description {
+  margin-top: 0.8rem;
+  width: 30rem;
+
+  font-size: 10px;
+  color: gray;
+}
+
+.wilaya {
+  color: rgb(12, 171, 192);
+  font-weight: 500;
+
+  float: left;
+  width: fit-content;
+
+  font-size: 12px;
+}
+
+.Prenom {
+  font-weight: 500;
+  font-size: 12px;
+}
+.age {
+  color: gray;
+  font-weight: 600;
+  font-size: 12px;
+}
+.nomService {
+  font-weight: 500;
+  font-size: 16px;
+
+  color: rgb(59, 57, 57);
+}
+
+.image {
+  /* content:url("../../../images/profile.png");  */
+  margin-top: 0.7rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-items: center;
+
+  margin-top: 1rem;
+}

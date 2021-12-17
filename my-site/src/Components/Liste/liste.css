@@ -1,0 +1,92 @@
+.principalle {
+  width: auto;
+  /* background-color: rgb(242, 242, 242); */
+  font-size: 16px;
+}
+.haut {
+  margin-top: 3rem;
+  /* background-color: honeydew; */
+  height: 10rem;
+  /* background-color:rgb(124,252,0); */
+  background-color: rgb(153, 229, 238);
+}
+
+.search-container input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 12px;
+  border: 0.05rem solid #d8d4d4;
+  outline: none;
+  width: 10rem;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 12px;
+  border: 0.05rem solid #d8d4d4;
+  cursor: pointer;
+}
+
+.lista {
+  position: static;
+  width: fit-content;
+  display: block;
+
+  margin-right: auto;
+  padding: 0.5rem;
+}
+.bas {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(242, 242, 242);
+  padding: 1rem;
+}
+.filtrer {
+  border: #c0bdbd solid 0.05rem;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  font-size: 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.8rem;
+}
+.filtreElement {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+}
+.labell {
+  margin-bottom: 5px;
+}
+.filtreinput {
+  padding: 0.4rem;
+  border: #d8d4d4 solid 0.05rem;
+  outline: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.T {
+  position: static;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  font-weight: 600;
+  margin-left: 8rem;
+  font-family: "Nunito", sans-serif;
+  /* color:#0e204d; */
+  font-size: 25px;
+  color: rgb(61, 61, 61);
+  text-transform: capitalize;
+  width: 50rem;
+}

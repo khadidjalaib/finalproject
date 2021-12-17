@@ -1,0 +1,56 @@
+.apropos {
+  margin-top: 5rem;
+
+  width: 80%;
+  font-weight: 500;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+}
+.allapropos {
+  width: 100%;
+  background-color: white;
+}
+.paragraphe {
+  width: 80%;
+  margin-bottom: 3rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  /* text-align: justify; */
+  line-height: 1.5rem;
+}
+
+.imageapropos {
+  background-image: url("../../images/apropos.png");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40rem;
+  height: 50rem;
+  margin-left: 2rem;
+}
+.imageetservices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.elmt {
+  margin-top: 3rem;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 600;
+}
+
+.titre {
+  font-family: "Nunito", sans-serif;
+  color: rgb(0, 191, 213);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}

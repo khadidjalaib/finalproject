@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.all {
+  background-color: rgb(242, 242, 242);
+  padding-bottom: 5rem;
+}
+.thetop {
+  margin-top: 4rem;
+  height: 4rem;
+}
+
+.containerr {
+  /* Used to position the input */
+  position: relative;
+
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  /* Border */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.container__input {
+  /* Take the full size */
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  /* Make it transparent */
+  opacity: 0;
+}
+
+.container__icon {
+  margin-right: 8px;
+}
+
+.creer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  font-size: 16px;
+  color: #0e204d;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 35rem;
+  width: 70%;
+  background-color: #fff;
+  padding: 20px 25px;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  position: static;
+}
+.container .title {
+  font-size: 14px;
+  font-weight: 400;
+  position: static;
+  color: rgb(0, 170, 189);
+}
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 15px;
+  border-radius: 5px;
+  /* background: linear-gradient(135deg, #71b7e6#9b59b6); */
+}
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 6px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 50px);
+}
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.user-details .input-box input {
+  height: 2rem;
+  width: 100%;
+  outline: none;
+  font-size: 12px;
+  border-radius: 5px;
+  padding-left: 7px;
+  border: 0.7px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #598cb6;
+}
+form .gender-details .gender-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 0.7rem 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+form .category label .dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: black;
+  border-color: #d9d9d9;
+}
+form input[type="radio"] {
+  display: none;
+}
+form .button {
+  height: 3.5rem;
+  width: 6rem;
+  margin-left: 6rem;
+}
+form .button input {
+  height: 100%;
+  width: 70%;
+  margin-left: 2rem;
+  margin-right: auto;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgb(0, 170, 189);
+}
+form .button button {
+  height: 100%;
+  width: 70%;
+  margin-left: 2rem;
+  margin-right: auto;
+  border-radius: 5px;
+  border: none;
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgb(0, 170, 189);
+}
+form .button input:hover {
+  transform: scale(1.08);
+}
+form .button button {
+  transform: scale(1.08);
+}
+
+.textt {
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+}
+textarea {
+  height: 6rem;
+  width: 25rem;
+  resize: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.text-message {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+}
+.details {
+  font-size: 14px;
+  font-weight: 600;
+}

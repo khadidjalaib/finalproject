@@ -1,0 +1,60 @@
+footer{
+   
+
+    padding-top: 30px;
+    margin-top: 40px;
+    background-color: rgb(153, 229, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position:static;
+    bottom:0;
+    
+
+}
+.left{
+
+    width: 24rem;
+    height: 5cm;
+    text-transform: lowercase;
+    font-size:1.5rem;
+    margin-top: 2rem;
+   margin-right:30rem ;
+   font-family: "Nunito",sans-serif ;
+   color:black;
+   font-weight: 600;
+}
+.aide{
+    color :BLACK;
+      width: 16rem;
+      height: 12rem;
+      text-transform: lowercase;
+      font-size: 0.9rem;
+      text-align:left;
+      
+      border: solid white 0.5px;
+      border-radius: 5%;
+      background-color:white;
+  
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .appel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    
+  }
+ .location{
+
+  display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+ }
