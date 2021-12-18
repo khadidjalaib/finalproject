@@ -3,14 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 .all {
   background-color: rgb(242, 242, 242);
   padding-bottom: 5rem;
 }
 .thetop {
-  margin-top: 4rem;
+  margin-top: 5px;
   height: 4rem;
 }
 
@@ -19,7 +19,7 @@
   position: relative;
 
   /* Center the content */
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   /* Border */
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -37,10 +37,6 @@
   opacity: 0;
 }
 
-.container__icon {
-  margin-right: 8px;
-}
-
 .creer {
   display: flex;
   flex-direction: column;
@@ -50,53 +46,45 @@
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
-  font-size: 16px;
-  color: #0e204d;
   font-weight: 600;
   font-family: "Nunito", sans-serif;
 }
 .container {
-  margin-top: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 35rem;
-  width: 70%;
-  background-color: #fff;
+  max-width: 40rem;
+  width: 100%;
+
+  background-color: rgb(242, 242, 242);
   padding: 20px 25px;
-  padding-bottom: 2rem;
+  /* 
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
   position: static;
 }
 .container .title {
-  font-size: 14px;
-  font-weight: 400;
+  margin-left: 5px;
+  font-size: 25px;
+  font-weight: 600;
   position: static;
   color: rgb(0, 170, 189);
 }
-.container .title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1px;
-  width: 15px;
-  border-radius: 5px;
-  /* background: linear-gradient(135deg, #71b7e6#9b59b6); */
-}
+
 .content form .user-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px 0 6px 0;
+  margin: 2px 0 10px 0;
 }
 form .user-details .input-box {
   margin-bottom: 10px;
-  width: calc(100% / 2 - 50px);
+  width: calc(100% / 2 - 45px);
+}
+#demo-simple-select-label {
+  font-family: "Nunito", sans-serif;
 }
 form .input-box span.details {
   display: block;
@@ -107,19 +95,19 @@ form .input-box span.details {
   height: 2rem;
   width: 100%;
   outline: none;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 5px;
-  padding-left: 7px;
+  padding-left: 8px;
   border: 0.7px solid #ccc;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
-  border-color: #598cb6;
+  border-color: #75a7cf;
 }
 form .gender-details .gender-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 }
 form .category {
@@ -143,29 +131,25 @@ form .category label .dot {
   border: 5px solid transparent;
   transition: all 0.3s ease;
 }
-#dot-1:checked ~ .category label .one,
-#dot-2:checked ~ .category label .two,
-#dot-3:checked ~ .category label .three {
-  background: black;
-  border-color: #d9d9d9;
-}
+
 form input[type="radio"] {
   display: none;
 }
-form .button {
-  height: 3.5rem;
-  width: 6rem;
+/* form .button {
+  height: 2rem;
+  width: 400px;
+  font-size: 14px;
   margin-left: 6rem;
-}
+} */
 form .button input {
-  height: 100%;
-  width: 70%;
-  margin-left: 2rem;
+  height: 25px;
+  width: 60%;
+  margin-left: 5rem;
   margin-right: auto;
   border-radius: 5px;
   border: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -173,15 +157,15 @@ form .button input {
   background: rgb(0, 170, 189);
 }
 form .button button {
-  height: 100%;
-  width: 70%;
-  margin-left: 2rem;
+  height: 28px;
+  width: 60%;
+  margin-left: 5rem;
   margin-right: auto;
   border-radius: 5px;
   border: none;
   margin-top: 0.5rem;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -189,10 +173,10 @@ form .button button {
   background: rgb(0, 170, 189);
 }
 form .button input:hover {
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
-form .button button {
-  transform: scale(1.08);
+form .button button:hover {
+  transform: scale(1.02);
 }
 
 .textt {
@@ -203,8 +187,8 @@ form .button button {
 }
 textarea {
   height: 6rem;
-  width: 25rem;
-  resize: none;
+  width: 35rem;
+  /* resize: none; */
   border-radius: 5px;
   font-size: 14px;
 }

@@ -4,9 +4,11 @@
   font-size: 16px;
 }
 .haut {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+
   /* background-color: honeydew; */
-  height: 10rem;
+
   /* background-color:rgb(124,252,0); */
   background-color: rgb(153, 229, 238);
 }

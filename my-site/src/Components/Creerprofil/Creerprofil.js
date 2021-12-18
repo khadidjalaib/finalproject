@@ -80,7 +80,7 @@ function Creerprofil() {
                 <span className="details">Age</span>
                 <input
                   type="text"
-                  placeholder="Entez your password"
+                  placeholder="Entrez votre age"
                   required
                   value={serviceData.Age}
                   onChange={(e) =>
@@ -127,7 +127,7 @@ function Creerprofil() {
                     id="demo-simple-select"
                   >
                     <MenuItem value="Garde enfant">Garde enfant</MenuItem>
-                    <MenuItem value="dame/homme de compagnie">
+                    <MenuItem value="Auxiliare de vie">
                       Auxiliare de vie
                     </MenuItem>
                     <MenuItem value="assistant pour handicapés">
@@ -216,7 +216,9 @@ function Creerprofil() {
               <input type="submit" value="Confirmer"></input>
 
               <div>
-                <button onClick={clear}>clear</button>
+                <button className="clear" onClick={clear}>
+                  clear
+                </button>
               </div>
             </div>
           </form>
