@@ -23,18 +23,18 @@
   padding: 1.3rem;
   width: 35rem;
   height: 20rem;
-  background-color: white;
-
+  background-color: transparent;
+  border: none;
   margin-left: 0.5rem;
 
-  margin-top: 15rem;
+  margin-top: 12rem;
   margin-bottom: 1.25rem;
   position: static;
 
-  -webkit-border-radius: 5px;
+  /* -webkit-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 8px 5px rgba(168, 168, 168, 0.31);
-  box-shadow: 2px 2px 8px 5px rgba(168, 168, 168, 0.31);
+  box-shadow: 2px 2px 8px 5px rgba(168, 168, 168, 0.31); */
 }
 
 .navigation {
@@ -108,7 +108,7 @@
 }
 .inputt {
   padding: 0.5rem;
-  width: 18rem;
+  width: 25rem;
   font-size: 14px;
   font-family: "Nunito", sans-serif;
   border: solid 1px lightgrey;

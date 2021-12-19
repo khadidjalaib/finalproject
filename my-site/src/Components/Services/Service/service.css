@@ -3,8 +3,8 @@
 
   padding: 0.5rem;
   margin: 1rem;
-  width: 45rem;
-  height: 10rem;
+  width: 50;
+  height: 12rem;
   font-size: 16px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -41,39 +41,41 @@
 
 .desc {
   overflow: hidden;
-  position: relative;
-  height: 5rem;
+  position: static;
+  height: 6.5rem;
+  padding: 0.2rem;
 }
 .Description {
   margin-top: 0.8rem;
-  width: 30rem;
+  width: 40rem;
 
-  font-size: 10px;
+  font-size: 14px;
   color: gray;
 }
 
 .wilaya {
   color: rgb(12, 171, 192);
-  font-weight: 500;
+  font-weight: 600;
 
   float: left;
   width: fit-content;
 
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .Prenom {
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(59, 57, 57);
 }
 .age {
   color: gray;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
 }
 .nomService {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
 
   color: rgb(59, 57, 57);
 }
@@ -81,9 +83,10 @@
 .image {
   /* content:url("../../../images/profile.png");  */
   margin-top: 0.7rem;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
+  border: solid 0.2px rgb(233, 230, 230);
 }
 .infos {
   display: flex;
@@ -92,5 +95,5 @@
 
   justify-items: center;
 
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }

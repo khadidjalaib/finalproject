@@ -169,7 +169,7 @@ function Creerprofil() {
                 <textarea
                   className="textt"
                   type="textarea"
-                  maxlength="500"
+                  maxlength="400"
                   value={serviceData.description}
                   onChange={(e) =>
                     setServiceData({
@@ -203,7 +203,7 @@ function Creerprofil() {
             <div className="phprofile">
               <label for="file">Choose a file</label>
               <FileBase
-                className="inputfile"
+                className="filebasee"
                 type="file"
                 multiple={false}
                 onDone={({ base64 }) =>
