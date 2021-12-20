@@ -46,7 +46,7 @@
   padding: 0.2rem;
 }
 .Description {
-  margin-top: 0.8rem;
+  margin-top: 0.2rem;
   width: 40rem;
 
   font-size: 14px;
@@ -66,7 +66,7 @@
 .Prenom {
   font-weight: 600;
   font-size: 14px;
-  color: rgb(59, 57, 57);
+  color: gray;
 }
 .age {
   color: gray;
@@ -79,7 +79,12 @@
 
   color: rgb(59, 57, 57);
 }
-
+.pprenom {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 6px;
+  color: rgb(59, 57, 57);
+}
 .image {
   /* content:url("../../../images/profile.png");  */
   margin-top: 0.7rem;

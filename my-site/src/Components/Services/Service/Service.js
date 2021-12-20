@@ -21,18 +21,19 @@ const Service = ({ service }) => {
           />
 
           <div className="infos">
-            <span className="Prenom">{service.prenom}</span>
             <span className="age">{service.Age} ans</span>
+            <div className="wilaya">
+              <span>{service.wilaya}</span>
+            </div>
           </div>
         </div>
         <div className="rightside">
-          <span className="nomService">{service.nomService}</span>
+          <span className="nomService">{service.nom}</span>
+          <span className="pprenom">{service.prenom}</span>
+          <br></br>
+          <span className="Prenom">{service.nomService}</span>
           <div className="desc">
             <p className="Description">{service.description}</p>
-          </div>
-
-          <div className="wilaya">
-            <span>{service.wilaya}</span>
           </div>
         </div>
       </article>

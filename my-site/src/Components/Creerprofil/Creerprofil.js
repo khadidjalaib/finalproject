@@ -5,6 +5,7 @@ import { MenuItem, FormControl, InputLabel, Select } from "@material-ui/core";
 import { useDispatch } from "react-redux";
 import { createService } from "../../actions/services";
 import FileBase from "react-file-base64";
+import { useHistory } from "react-router-dom";
 function Creerprofil() {
   const [serviceData, setServiceData] = useState({
     nomService: "",
@@ -24,6 +25,11 @@ function Creerprofil() {
   };
   const clear = () => {};
 
+  const history = useHistory();
+
+  const handleRoute = () => {
+    history.push("/Liste");
+  };
   return (
     <div className="all">
       <div className="thetop"></div>
@@ -213,7 +219,11 @@ function Creerprofil() {
             </div>
 
             <div className="button">
-              <input type="submit" value="Confirmer"></input>
+              <input
+                type="submit"
+                value="Confirmer"
+                onClick={handleRoute}
+              ></input>
 
               <div>
                 <button className="clear" onClick={clear}>
