@@ -11,7 +11,8 @@ import { useSelector } from "react-redux";
 const Assistant = (service) => {
   const services = useSelector((state) => state.services);
   console.log(services);
-
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectTerm, setSelectTerm] = useState("");
   const dispatch = useDispatch();
 
   const [Loading, SetLoading] = useState(false);

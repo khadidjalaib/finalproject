@@ -5,19 +5,22 @@ function apropos() {
   return (
     <div className="allapropos">
       <div className="apropos">
-        <div>
-          <h2 className="titre">A propos de nous</h2>
+        <div className="titre">
+          <h1>A propos de nous</h1>
         </div>
-        <div className="paragraphe">
-          <p>
-            {" "}
-            Trouvez les personnes idéales pour prendre soin de vous ou de vos
-            proches pour une meilleure autonomie à domicile en simple clics, qui
-            assurent leur bien-être pour tous les petits gestes du quotidien :
-            aide au lever, aide au repas, aux courses, déplacements en
-            pharmacie,faires les differents taches de ménages. differents
-            services sont disponible dans notre site, vous trouverez:
-          </p>
+        <div className="imgetp">
+          <div className="tofcoté"></div>
+          <div className="paragraphe">
+            <p>
+              Trouvez les personnes idéales pour prendre soin de vous ou de vos
+              proches pour une meilleure autonomie à domicile en simple clics,
+              qui assurent leur bien-être pour tous les petits gestes du
+              quotidien :<br /> aide au lever, aide au repas, aux courses,
+              déplacements en pharmacie,faires les differents taches de ménages.
+              differents services sont disponible dans notre site, vous
+              trouverez:
+            </p>
+          </div>
         </div>
         <div className="imageetservices">
           <div className="elmts">

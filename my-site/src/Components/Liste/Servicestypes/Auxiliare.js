@@ -23,7 +23,8 @@ const Auxiliare = (service) => {
       SetLoading(false);
     }, 3000);
   }, [dispatch]);
-
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectTerm, setSelectTerm] = useState("");
   return (
     <div>
       <div className="principalle">

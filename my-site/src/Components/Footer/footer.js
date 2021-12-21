@@ -7,12 +7,12 @@ const footer = () => {
   return (
     <div>
       <footer>
-        <div className="left">
+        {/* <div className="left">
           DES SERVICES VARIÉS POUR RÉPONDRE À TOUS VOS BESOINS
-        </div>
+        </div> */}
         <div className="aide">
-          Si vous avez des questions ou besoin d'aide, n'hésitez pas à nous
-          contacter
+          {/* Si vous avez des questions ou besoin d'aide, n'hésitez pas à nous
+        contacter */}
           <div className="appel">
             <LocalPhoneIcon> </LocalPhoneIcon>
             <span className="phone"> 0555 55 55 22</span>

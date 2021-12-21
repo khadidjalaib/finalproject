@@ -15,10 +15,7 @@ const Service = ({ service }) => {
     <div className="cardd">
       <article className="contenu">
         <div className="leftside">
-          <img
-            className="image"
-            src={service.photo || "../../images/hands-comfort.jpg"}
-          />
+          <img className="image" src={service.photo} />
 
           <div className="infos">
             <span className="age">{service.Age} ans</span>
