@@ -19,17 +19,18 @@ function Creerprofil() {
   });
   const dispatch = useDispatch();
 
+  const history = useHistory();
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(createService(serviceData));
-  };
-  const clear = () => {};
-
-  const history = useHistory();
-
-  const handleRoute = () => {
     history.push("/Liste");
   };
+
+  const clear = () => {};
+
+  // const handleRoute = () => {
+  //   history.push("/Liste");
+  // };
   return (
     <div className="all">
       <div className="thetop"></div>
@@ -219,16 +220,12 @@ function Creerprofil() {
             </div>
 
             <div className="button">
-              <input
-                type="submit"
-                value="Confirmer"
-                onClick={handleRoute}
-              ></input>
+              <input type="submit" value="Confirmer"></input>
 
               <div>
-                <button className="clear" onClick={clear}>
+                {/* <button className="clear" onClick={clear}>
                   clear
-                </button>
+                </button> */}
               </div>
             </div>
           </form>

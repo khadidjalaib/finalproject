@@ -1,14 +1,12 @@
-import React from 'react'
+import React from "react";
 
-import "./skeletonCard.css"
+import "./skeletonCard.css";
 const SkeletonCard = () => {
-    return (
-        <>
-        <div className="s" >
-            
-        </div>
-        </>
-    )
-}
+  return (
+    <>
+      <div className="s"></div>
+    </>
+  );
+};
 
-export default SkeletonCard
+export default SkeletonCard;
