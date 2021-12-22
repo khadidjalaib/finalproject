@@ -38,7 +38,10 @@ function Accueil() {
           <span className="Titre">
             Trouvez une garde d’enfant, aide à domicile, ou une aide ménagère
           </span>
-
+          <h6>
+            Faites-vous aider, maîtrisez votre budget et retrouvez du temps pour
+            l'essentiel.
+          </h6>
           <nav className="navigation">
             <ul className="choix">
               <div className="block1">
