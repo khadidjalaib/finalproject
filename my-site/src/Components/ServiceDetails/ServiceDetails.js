@@ -6,7 +6,7 @@ import { useParams, useHistory, Link } from "react-router-dom";
 import { getService } from "../../actions/services";
 import "./ServiceDetails.css";
 
-export default function ServiceDetails() {
+const ServiceDetails = () => {
   const { service, services } = useSelector((state) => state.services);
   const dispatch = useDispatch();
 
@@ -17,4 +17,5 @@ export default function ServiceDetails() {
   }, [id]);
 
   return <div className="details">{service.nomService}</div>;
-}
+};
+export default ServiceDetails;

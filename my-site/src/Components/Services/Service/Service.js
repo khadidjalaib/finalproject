@@ -37,7 +37,7 @@ const Service = ({ service }) => {
           <div className="desc">
             <p className="Description">{service.description}</p>
           </div>
-          <button onClick={openService}>details</button>
+          {/* <button onClick={openService}>details</button> */}
         </div>
       </article>
     </div>
