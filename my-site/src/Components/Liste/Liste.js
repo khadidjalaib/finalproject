@@ -6,16 +6,31 @@ import { useState } from "react";
 import "./liste.css";
 import Service from "../Services/Service/Service";
 import { useSelector } from "react-redux";
-
+import Pagination from "../Pagination/Pagination";
 import SkeletonCard from "../Services/Service/SkeletonCard.js";
 import SkeletonFilter from "../Services/Service/SkeletonFilter.js";
-
+import { useHistory, useLocation } from "react-router-dom";
+import {
+  Container,
+  Grow,
+  Grid,
+  AppBar,
+  TextField,
+  Button,
+  Paper,
+} from "@material-ui/core";
+import useStyles from "./styles";
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 const Liste = (service) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectTerm, setSelectTerm] = useState("");
   const services = useSelector((state) => state.services);
   console.log(services);
-
+  const classes = useStyles();
+  const query = useQuery();
+  const page = query.get("page") || 1;
   const dispatch = useDispatch();
 
   const [Loading, SetLoading] = useState(false);
@@ -136,6 +151,10 @@ const Liste = (service) => {
               ))}
           </div>
         </div>
+        {/* 
+        <Paper className={classes.pagination} elevation={6}>
+          <Pagination page={page} />
+        </Paper> */}
       </div>
     </div>
   );

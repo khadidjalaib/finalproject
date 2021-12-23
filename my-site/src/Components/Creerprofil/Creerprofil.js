@@ -97,7 +97,7 @@ function Creerprofil() {
               </div>
 
               <div className="input-box">
-                <span className="details">Temps de travail</span>
+                <span className="details">Genre</span>
                 <FormControl fullWidth>
                   <InputLabel id="demo-simple-select-label" required>
                     choisir{" "}
@@ -106,8 +106,8 @@ function Creerprofil() {
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                   >
-                    <MenuItem value={10}>plein temps</MenuItem>
-                    <MenuItem value={20}>mi-temps</MenuItem>
+                    <MenuItem value={10}>Femme</MenuItem>
+                    <MenuItem value={20}>Homme</MenuItem>
                   </Select>
                 </FormControl>
               </div>
@@ -190,25 +190,8 @@ function Creerprofil() {
               </div>
             </div>
 
-            <div className="gender-details">
-              <input type="radio" name="gender" id="dot-1"></input>
-              <input type="radio" name="gender" id="dot-2"></input>
-              <input type="radio" name="gender" id="dot-3"></input>
-
-              <span className="gender-title">Genre</span>
-              <div className="category">
-                <label for="dot-1">
-                  <span className="dot one"></span>
-                  <span className="gender">Male</span>
-                </label>
-                <label for="dot-2">
-                  <span className="dot two"></span>
-                  <span className="gender">Female</span>
-                </label>
-              </div>
-            </div>
             <div className="phprofile">
-              <label for="file">Choose a file</label>
+              <label for="file"></label>
               <FileBase
                 className="filebasee"
                 type="file"

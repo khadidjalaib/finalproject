@@ -3,13 +3,18 @@ import "./service.css";
 import { getServices } from "../../../actions/services";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 import "react-loading-skeleton/dist/skeleton.css";
 const Service = ({ service }) => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getServices());
-  }, [dispatch]);
+  const history = useHistory();
+  const openService = (e) => {
+    history.push(`/Liste/${service._id}`);
+  };
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getServices());
+  // }, [dispatch]);
 
   return (
     <div className="cardd">
@@ -32,6 +37,7 @@ const Service = ({ service }) => {
           <div className="desc">
             <p className="Description">{service.description}</p>
           </div>
+          <button onClick={openService}>details</button>
         </div>
       </article>
     </div>

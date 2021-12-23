@@ -184,9 +184,9 @@
   flex-direction: column;
   justify-items: center;
   justify-content: center;
-
+  margin-bottom: 4rem;
   width: fit-content;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
   text-overflow: ellipsis;

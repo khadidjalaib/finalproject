@@ -12,6 +12,7 @@ import Aidemenagère from "./Components/Liste/Servicestypes/Aidemenagère";
 import Assistant from "./Components/Liste/Servicestypes/Assistant";
 import Auxiliare from "./Components/Liste/Servicestypes/Auxiliare";
 import Gardeenfant from "./Components/Liste/Servicestypes/Gardeenfant";
+import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
 import {
   BrowserRouter as Router,
   Route,
@@ -33,6 +34,7 @@ function App() {
           {/* <Route path="/Services" exact component={Services}/> */}
           <Route path="/Apropos" exact component={Apropos} />
           <Route path="/Liste" exact component={Liste} />
+          <Route path="Liste/:id" exact component={ServiceDetails} />
           {/* <Route path="/Contacter" exact component={Contacter}/> */}
           <Route path="/Creerprofil" exact component={Creerprofil} />
           <Route path="/Aidemenagère" exact component={Aidemenagère} />

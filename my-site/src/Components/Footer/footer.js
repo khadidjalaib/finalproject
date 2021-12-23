@@ -5,24 +5,44 @@ import LocationOnIcon from "@material-ui/icons/LocationOn";
 
 const footer = () => {
   return (
-    <div>
-      <footer>
-        {/* <div className="left">
-          DES SERVICES VARIÉS POUR RÉPONDRE À TOUS VOS BESOINS
-        </div> */}
-        <div className="aide">
-          {/* Si vous avez des questions ou besoin d'aide, n'hésitez pas à nous
-        contacter */}
-          <div className="appel">
-            <LocalPhoneIcon> </LocalPhoneIcon>
-            <span className="phone"> 0555 55 55 22</span>
+    <>
+      <footer className="footer-distributed">
+        <div className="footer-left">
+          <h3>
+            Company<span>logo</span>
+          </h3>
+        </div>
+
+        <div className="footer-center">
+          <div>
+            <i className="fa fa-map-marker"></i>
+            <p>
+              <span>Alger</span>
+            </p>
           </div>
-          <div className="location">
-            <LocationOnIcon></LocationOnIcon> Alger
+
+          <div>
+            <i className="fa fa-phone"></i>
+            <p>055555555</p>
+          </div>
+
+          <div>
+            <i className="fa fa-envelope"></i>
+            <p>
+              <a>service.dom@gmail.com</a>
+            </p>
           </div>
         </div>
+
+        <div className="footer-right">
+          <p className="footer-company-about">
+            <span>About the company</span>
+            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+            euismod convallis velit, eu auctor lacus vehicula sit amet.
+          </p>
+        </div>
       </footer>
-    </div>
+    </>
   );
 };
 
