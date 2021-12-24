@@ -30,11 +30,11 @@ function App() {
         </header>
 
         <Switch>
-          <Route path="/" exact component={Accueil} />
+          <Route path="/home" exact component={Accueil} />
           {/* <Route path="/Services" exact component={Services}/> */}
           <Route path="/Apropos" exact component={Apropos} />
           <Route path="/Liste" exact component={Liste} />
-          <Route path="Liste/:id" exact component={ServiceDetails} />
+          <Route path="/Liste/:id" exact component={ServiceDetails} />
           {/* <Route path="/Contacter" exact component={Contacter}/> */}
           <Route path="/Creerprofil" exact component={Creerprofil} />
           <Route path="/Aidemenagère" exact component={Aidemenagère} />

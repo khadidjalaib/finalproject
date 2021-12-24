@@ -4,7 +4,7 @@ export default (services = [], action) => {
       return action.payload;
 
     case "FETCH_SERVICE":
-      return { ...state, service: action.payload.service };
+      return [action.payload.service];
     case "CREATE":
       return [...services, action.payload];
     default:

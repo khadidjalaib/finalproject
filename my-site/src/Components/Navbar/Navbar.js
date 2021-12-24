@@ -43,7 +43,7 @@ export default function Navbar() {
         <ul className="mennu">
           <li className="enav">
             {" "}
-            <Link className="linkk" to="/">
+            <Link className="linkk" to="/home">
               {" "}
               Accueil
             </Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
           {/* <li className="enav" >  <Link  className="linkk"to ="/Contacter">Contacter </Link></li> */}
           {/* <li className="enav" > <Link className="linkk" to ="/Creerprofil">creer un profil</Link> </li> */}
 
-          <button className="annonce" onClick={handleRoute}>
+          <button className="annoncenav" onClick={handleRoute}>
             Créer une annonce
           </button>
         </ul>

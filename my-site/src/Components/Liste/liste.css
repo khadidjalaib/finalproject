@@ -19,7 +19,7 @@
   font-size: 12px;
   border: 0.05rem solid #d8d4d4;
   outline: none;
-  width: 10rem;
+  width: 12rem;
 }
 
 .search-container button {
@@ -52,8 +52,9 @@
   width: fit-content;
   height: fit-content;
   margin-left: 5rem;
+
   margin-top: 1rem;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;

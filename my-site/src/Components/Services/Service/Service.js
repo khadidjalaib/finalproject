@@ -4,20 +4,20 @@ import { getServices } from "../../../actions/services";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-
+import { Button } from "@material-ui/core";
 import "react-loading-skeleton/dist/skeleton.css";
 const Service = ({ service }) => {
   const history = useHistory();
   const openService = (e) => {
     history.push(`/Liste/${service._id}`);
   };
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(getServices());
-  // }, [dispatch]);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getServices());
+  }, [dispatch]);
 
   return (
-    <div className="cardd">
+    <div className="cardd" onClick={openService}>
       <article className="contenu">
         <div className="leftside">
           <img className="image" src={service.photo} />
@@ -37,7 +37,6 @@ const Service = ({ service }) => {
           <div className="desc">
             <p className="Description">{service.description}</p>
           </div>
-          {/* <button onClick={openService}>details</button> */}
         </div>
       </article>
     </div>

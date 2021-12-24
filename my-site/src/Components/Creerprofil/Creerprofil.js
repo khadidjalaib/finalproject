@@ -16,6 +16,7 @@ function Creerprofil() {
     photo: "",
     wilaya: "",
     tél: "",
+    genre: "",
   });
   const dispatch = useDispatch();
 

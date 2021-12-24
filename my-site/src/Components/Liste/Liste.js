@@ -19,18 +19,21 @@ import {
   Button,
   Paper,
 } from "@material-ui/core";
-import useStyles from "./styles";
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
+// import useStyles from "./styles";
+// function useQuery() {
+//   return new URLSearchParams(useLocation().search);
+// }
 const Liste = (service) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectTerm, setSelectTerm] = useState("");
+  const [regionTerm, setRegionTerm] = useState("");
+  const [ageTerm, setAgeTerm] = useState("");
+  const [genreTerm, setgenreTerm] = useState("");
+
   const services = useSelector((state) => state.services);
   console.log(services);
-  const classes = useStyles();
-  const query = useQuery();
-  const page = query.get("page") || 1;
+  // const classes = useStyles();
+  // const query = useQuery();
+  // const page = query.get("page") || 1;
   const dispatch = useDispatch();
 
   const [Loading, SetLoading] = useState(false);
@@ -85,7 +88,7 @@ const Liste = (service) => {
                     className="filtreinput"
                     placeholder="choisir la region"
                     onChange={(e) => {
-                      setSelectTerm(e.target.value);
+                      setRegionTerm(e.target.value);
                     }}
                   >
                     <option selected value="coconut">
@@ -107,22 +110,33 @@ const Liste = (service) => {
                   <label className="labell">Age</label>
                   <input
                     className="filtreinput"
-                    type="text"
+                    type="number"
                     name="search"
                     placeholder="entrer l'age"
-                    value=""
+                    onChange={(e) => {
+                      setAgeTerm(+e.target.value);
+                    }}
                   />
                 </div>
 
                 <div className="filtreElement">
                   <label className="labell">Genre</label>
-                  <input
+                  <select
                     className="filtreinput"
                     type="text"
                     name="search"
                     placeholder="choisir le genre"
                     value=""
-                  ></input>
+                    onChange={(e) => {
+                      setgenreTerm(e.target.value);
+                    }}
+                  >
+                    <option selected value="coconut">
+                      selectioner le genre
+                    </option>
+                    <option value="Femme">Femme</option>
+                    <option value="Homme">Homme</option>
+                  </select>
                 </div>
               </div>
             )}
@@ -140,6 +154,30 @@ const Liste = (service) => {
                   return service;
                 }
               })
+              .filter((service) => {
+                if (ageTerm == "") {
+                  return service;
+                } else if (service.Age == ageTerm) {
+                  return service;
+                }
+              })
+              .filter((service) => {
+                if (regionTerm == "") {
+                  return service;
+                } else if (service.wilaya.includes(regionTerm)) {
+                  return service;
+                }
+              })
+              .filter((service) => {
+                if (genreTerm == "") {
+                  return service;
+                } else if (
+                  service.genre.toLowerCase().includes(genreTerm.toLowerCase())
+                ) {
+                  return service;
+                }
+              })
+
               .map((service) => (
                 <>
                   {Loading ? (
