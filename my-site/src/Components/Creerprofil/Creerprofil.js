@@ -104,6 +104,10 @@ function Creerprofil() {
                     choisir{" "}
                   </InputLabel>
                   <Select
+                    value={serviceData.genre}
+                    onChange={(e) =>
+                      setServiceData({ ...serviceData, genre: e.target.value })
+                    }
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                   >

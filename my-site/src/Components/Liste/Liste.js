@@ -119,7 +119,7 @@ const Liste = (service) => {
                   />
                 </div>
 
-                <div className="filtreElement">
+                {/* <div className="filtreElement">
                   <label className="labell">Genre</label>
                   <select
                     className="filtreinput"
@@ -137,7 +137,7 @@ const Liste = (service) => {
                     <option value="Femme">Femme</option>
                     <option value="Homme">Homme</option>
                   </select>
-                </div>
+                </div> */}
               </div>
             )}
           </>
@@ -164,14 +164,14 @@ const Liste = (service) => {
               .filter((service) => {
                 if (regionTerm == "") {
                   return service;
-                } else if (service.wilaya.includes(regionTerm)) {
+                } else if (service.wilaya == regionTerm) {
                   return service;
                 }
               })
               .filter((service) => {
                 if (genreTerm == "") {
                   return service;
-                } else if (service.genre.toLowerCase().includes(genreTerm)) {
+                } else if (service.genre == genreTerm) {
                   return service;
                 }
               })
