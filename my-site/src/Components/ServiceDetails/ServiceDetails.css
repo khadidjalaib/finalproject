@@ -1,18 +1,71 @@
+.generale {
+  width: 100%;
+  background-color: rgb(242, 242, 242);
+}
+
 .detaillls {
-  margin-top: 8rem;
-  height: 20rem;
+  padding-top: 4rem;
+  width: 70%;
+  display: flex;
+  box-sizing: border-box;
   margin-left: 100px;
+  flex-direction: column;
+  align-content: center;
+}
+#titre {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-left: 30px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 4rem;
+}
+.par {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: grey;
+  height: 300px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  text-align: left;
+  align-content: center;
+  align-self: center;
+  text-align: justify;
+  line-height: 35px;
+  padding: 1rem;
+  width: 90%;
+  font-family: "Nunito", sans-serif;
+  /* justify-content: center; */
+}
+#dc {
+  color: rgb(85, 84, 84);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 5px;
+  width: 80%;
+}
+.up {
+  width: 65%;
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  justify-self: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: white;
 }
 .pict {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  justify-content: center;
-  justify-self: center;
+  width: 180px;
+  height: 180px;
 }
 .photosection {
   width: fit-content;
@@ -22,4 +75,44 @@
   justify-items: center;
   justify-self: center;
   align-self: center;
+  margin-bottom: 2rem;
+}
+.nomsection {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+}
+#servicesection {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: rgb(63, 62, 62);
+  font-weight: 600;
+  margin: 5px;
+}
+#agesection {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(0, 191, 213);
+  font-family: "Nunito", sans-serif;
+}
+#phone {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  font-family: "Nunito", sans-serif;
+}
+
+#phone #item {
+  margin-left: 6px;
+}
+#location #item {
+  margin-left: 6px;
+}
+#location {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  font-family: "Nunito", sans-serif;
 }

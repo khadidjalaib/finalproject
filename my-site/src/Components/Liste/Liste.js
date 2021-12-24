@@ -171,9 +171,7 @@ const Liste = (service) => {
               .filter((service) => {
                 if (genreTerm == "") {
                   return service;
-                } else if (
-                  service.genre.toLowerCase().includes(genreTerm.toLowerCase())
-                ) {
+                } else if (service.genre.toLowerCase().includes(genreTerm)) {
                   return service;
                 }
               })

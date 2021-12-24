@@ -17,6 +17,7 @@ function Creerprofil() {
     wilaya: "",
     tél: "",
     genre: "",
+    email: "",
   });
   const dispatch = useDispatch();
 
@@ -24,7 +25,6 @@ function Creerprofil() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(createService(serviceData));
-    history.push("/Liste");
   };
 
   const clear = () => {};
@@ -75,7 +75,7 @@ function Creerprofil() {
               <div className="input-box">
                 <span className="details">Téléphone</span>
                 <input
-                  type="text"
+                  type="number"
                   placeholder="Entrez votre téléphone"
                   required
                   value={serviceData.tél}
@@ -87,7 +87,7 @@ function Creerprofil() {
               <div className="input-box">
                 <span className="details">Age</span>
                 <input
-                  type="text"
+                  type="number"
                   placeholder="Entrez votre age"
                   required
                   value={serviceData.Age}
@@ -204,7 +204,7 @@ function Creerprofil() {
             </div>
 
             <div className="button">
-              <input type="submit" value="Confirmer"></input>
+              <input type="submit" value="Confirmer" />
 
               <div>
                 {/* <button className="clear" onClick={clear}>

@@ -10,6 +10,7 @@ const serviceSchema = mongoose.Schema({
   wilaya: String,
   tél: String,
   genre: String,
+  email: String,
 });
 
 const serviceMessage = mongoose.model("serviceMessage", serviceSchema);
